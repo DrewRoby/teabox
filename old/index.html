@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teabox Consignment</title>
+</head>
+<body>
+<div id="app">
+  <div v-bind:background="primaryColor" class="itemCard" >
+    <button @click="addColor" type="button">More Colors</button>
+    <button @click="subtractColor" type="button">Fewer Colors</button>
+    <li v-for='color in numColors'>{{ color }}</li>Color 1: <input type="color" name="color1">   Color 2: <input type="color" name=""> <br>
+    <!-- add info box explaining primary color? -->
+    Primary Pattern: <input type="text" name="" value=""><br>
+    <!-- add collapsable selector box that lets you choose from a variety of patterns
+    start with popular ones (solid, stripes, bars, floral, "more")
+    if "more" is chosen, -->
+    <input type="image"><br>
+    <input type="search" name="" value="" placeholder="Brand">
+    <input type="search" name="" value="" placeholder="Size">
+    <input type="text" name="" value="" placeholder="Sex">
+    <input type="button" name="" value="More Options">
+
+  </div>
+</div>
+<script src="app.js" charset="utf-8"></script>
+</body>
+</html>
